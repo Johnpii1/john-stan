@@ -56,7 +56,7 @@ header {
 }
 
 /*NAV*/
-.contents  {
+.contents {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -132,15 +132,6 @@ input::placeholder {
   color: red;
 }
 
-
-
-
-
-
-
-
-
-
 /*mobile*/
 @media (min-width: 300px) and (max-width: 768px) {
   body {
@@ -155,15 +146,18 @@ input::placeholder {
   }
 
   .head-text {
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: 500;
   }
 
   .head-text a {
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: 700;
   }
 
   .view {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 800;
   }
 
   .view .bi-chevron-down {
@@ -177,16 +171,16 @@ input::placeholder {
   }
 
   /*Header*/
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 10px;
-  height: 60px;
-}
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    height: 60px;
+  }
 
   /*Logo*/
-  .logo { 
+  .logo {
     font-size: 18px;
   }
 
@@ -197,7 +191,7 @@ header {
     top: 120px;
     background-color: white;
     width: 100%;
-    right: 0.50px;
+    right: 0.5px;
     min-height: 35vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.949);
     z-index: 10;
@@ -214,13 +208,19 @@ header {
     font-weight: 500;
   }
 
+.contents .nav a:hover {
+  background-color: rgba(128, 128, 128, 0.411);
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
   .nav {
     display: block;
   }
 
   .head-icon {
     display: flex;
-    
   }
 
   .input-box {
@@ -233,49 +233,49 @@ header {
 
   /*Input*/
   .input-box .bi-search {
-  position: absolute;
-  left: 10px;
-  top: 25%;
-  transform: translateY(-50%);
-  color: black;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-}
+    position: absolute;
+    left: 10px;
+    top: 25%;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+  }
 
-.input-box input {
-  width: 100%;
-  background-color: rgba(128, 128, 128, 0.236);
-  padding: 10px 10px 10px 35px;
-  border: none;
-  border-radius: 5px;
-}
+  .input-box input {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.236);
+    padding: 10px 10px 10px 35px;
+    border: none;
+    border-radius: 5px;
+  }
 
-/*dropdown*/
-.btn {
-  font-size: 25px;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-}
+  /*dropdown*/
+  .btn {
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
 
-.btn:hover {
-  background-color: rgba(128, 128, 128, 0.651);
-  color: black;
-  border-radius: 25%;
-}
+  .btn:hover {
+    background-color: rgba(128, 128, 128, 0.651);
+    color: black;
+    border-radius: 25%;
+  }
 }
 
 /*big phone*/
 @media (min-width: 551px) and (max-width: 800px) {
-body {
-  background-color: blue;
-}
+  body {
+    background-color: blue;
+  }
 
-/*head*/
+  /*head*/
   .views {
     display: none;
   }
@@ -288,12 +288,12 @@ body {
 
 /* ipad*/
 @media (min-width: 800px) and (max-width: 1210px) {
-body {
-  background-color: yellow;
-  width: 100%;
-}
+  body {
+    background-color: yellow;
+    width: 100%;
+  }
 
-/*head*/
+  /*head*/
   .views {
     display: none;
   }
@@ -302,10 +302,7 @@ body {
   .contents {
     display: none;
   }
-
 }
-
-
 
 /*Laptop View*/
 @media (min-width: 1221px) and (max-width: 1600px) {
@@ -319,12 +316,8 @@ body {
     display: none;
   }
 
-
-
-
-  
-/*Dropdown btn*/
-.btn {
-  display: none;
-}
+  /*Dropdown btn*/
+  .btn {
+    display: none;
+  }
 }
