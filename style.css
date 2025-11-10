@@ -37,6 +37,8 @@ p > a {
   font-weight: bolder;
 }
 
+
+
 /*HEADER*/
 header {
   display: flex;
@@ -145,23 +147,24 @@ input::placeholder {
     display: none;
   }
 
+
   .head-text {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 500;
   }
 
   .head-text a {
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
   }
 
   .view {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 800;
   }
 
   .view .bi-chevron-down {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .view .bi-chevron-down:hover {
@@ -280,14 +283,18 @@ input::placeholder {
     display: none;
   }
 
+
   /*Header*/
   .contents {
     display: none;
   }
 }
 
+
+
+
 /* ipad*/
-@media (min-width: 800px) and (max-width: 1210px) {
+@media (min-width: 800px) and (max-width: 1108px) {
   body {
     background-color: yellow;
     width: 100%;
@@ -298,6 +305,10 @@ input::placeholder {
     display: none;
   }
 
+  .head-text1 {
+    display: none;
+  }
+
   /*Header*/
   .contents {
     display: none;
@@ -305,7 +316,7 @@ input::placeholder {
 }
 
 /*Laptop View*/
-@media (min-width: 1221px) and (max-width: 1600px) {
+@media (min-width: 1109px) and (max-width: 1600px) {
   body {
     background-color: black;
     width: 100%;
@@ -313,6 +324,10 @@ input::placeholder {
 
   /*Head*/
   .view {
+    display: none;
+  }
+
+  .head-text1 {
     display: none;
   }
 
