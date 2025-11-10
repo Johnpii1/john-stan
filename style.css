@@ -49,33 +49,278 @@ header {
   height: 13vh;
 }
 
+/*LOGO*/
 .logo {
-    cursor: pointer;
-    font-size: 25px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/*NAV*/
+.contents  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  padding: 5px 15px;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-align-items: center;
-gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .nav a {
-    color: black;
-    text-decoration: none;
-    font-size: 23px;
-    font-weight: 400;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .nav a:hover {
-    text-decoration: underline;
-    color: black;
+  text-decoration: underline;
+  color: black;
 }
 
-.icon-input {
+/*INPUT*/
+.input-box {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+}
+
+input::placeholder {
+  color: red;
+  font-size: 14px;
+}
+
+.input-box .bi-search {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input-box input {
+  width: 108%;
+  background-color: rgba(128, 128, 128, 0.236);
+  padding: 10px 10px 10px 35px;
+  border: none;
+  border-radius: 5px;
+}
+
+/*HEAD ICON*/
+.head-icon {
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.head-icon a {
+  color: black;
+}
+
+.head-icon a:hover {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+/*mobile*/
+@media (min-width: 300px) and (max-width: 768px) {
+  body {
+    background-color: red;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /*head*/
+  .views {
+    display: none;
+  }
+
+  .head-text {
+    font-size: 10px;
+  }
+
+  .head-text a {
+    font-size: 10px;
+  }
+
+  .view {
+    font-size: 10px;
+  }
+
+  .view .bi-chevron-down {
+    font-size: 10px;
+  }
+
+  .view .bi-chevron-down:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  /*Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  height: 60px;
+}
+
+  /*Logo*/
+  .logo { 
+    font-size: 18px;
+  }
+
+  /*Contents*/
+  .contents {
+    display: none;
+    position: absolute;
+    top: 120px;
+    background-color: white;
+    width: 100%;
+    right: 0.50px;
+    min-height: 35vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.949);
+    z-index: 10;
+  }
+
+  .contents a {
+    display: block;
+    padding: 8px 10px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .head-icon {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+    
+  }
+
+  .input-box {
+    display: block;
+  }
+
+  .contents.show {
+    display: block;
+  }
+
+  /*Input*/
+  .input-box .bi-search {
+  position: absolute;
+  left: 10px;
+  top: 25%;
+  transform: translateY(-50%);
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input-box input {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.236);
+  padding: 10px 10px 10px 35px;
+  border: none;
+  border-radius: 5px;
+}
+
+/*dropdown*/
+.btn {
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(128, 128, 128, 0.651);
+  color: black;
+  border-radius: 25%;
+}
+}
+
+/*big phone*/
+@media (min-width: 551px) and (max-width: 800px) {
+body {
+  background-color: blue;
+}
+
+/*head*/
+  .views {
+    display: none;
+  }
+
+  /*Header*/
+  .contents {
+    display: none;
+  }
+}
+
+/* ipad*/
+@media (min-width: 800px) and (max-width: 1210px) {
+body {
+  background-color: yellow;
+  width: 100%;
+}
+
+/*head*/
+  .views {
+    display: none;
+  }
+
+  /*Header*/
+  .contents {
+    display: none;
+  }
+
+}
+
+
+
+/*Laptop View*/
+@media (min-width: 1221px) and (max-width: 1600px) {
+  body {
+    background-color: black;
+    width: 100%;
+  }
+
+  /*Head*/
+  .view {
+    display: none;
+  }
+
+
+
+
+  
+/*Dropdown btn*/
+.btn {
+  display: none;
+}
 }
