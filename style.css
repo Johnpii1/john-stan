@@ -37,8 +37,6 @@ p > a {
   font-weight: bolder;
 }
 
-
-
 /*HEADER*/
 header {
   display: flex;
@@ -55,6 +53,11 @@ header {
 .logo {
   cursor: pointer;
   font-size: 25px;
+}
+
+/*Product drop*/
+h2 .bi-caret-down {
+  font-size: 20px;
 }
 
 /*NAV*/
@@ -147,7 +150,6 @@ input::placeholder {
     display: none;
   }
 
-
   .head-text {
     font-size: 13px;
     font-weight: 500;
@@ -171,6 +173,43 @@ input::placeholder {
     color: black;
     background-color: white;
     cursor: pointer;
+  }
+
+  .lan.show {
+    display: block;
+  }
+
+  .lan {
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: gray;
+    height: 35vh;
+    right: -10px;
+    margin: 5px;
+    width: 150px;
+    border-radius: 5px;
+  }
+
+  .lan1,
+  input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .lan1:hover {
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    border-radius: 5px;
+  }
+
+  .lan span,
+  input {
+    display: block;
   }
 
   /*Header*/
@@ -211,12 +250,12 @@ input::placeholder {
     font-weight: 500;
   }
 
-.contents .nav a:hover {
-  background-color: rgba(128, 128, 128, 0.411);
-  color: black;
-  text-decoration: none;
-  border-radius: 5px;
-}
+  .contents .nav a:hover {
+    background-color: rgba(128, 128, 128, 0.411);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 
   .nav {
     display: block;
@@ -224,6 +263,11 @@ input::placeholder {
 
   .head-icon {
     display: flex;
+  }
+
+  .head-icon i {
+    font-size: 18px;
+    font-weight: 900;
   }
 
   .input-box {
@@ -237,8 +281,8 @@ input::placeholder {
   /*Input*/
   .input-box .bi-search {
     position: absolute;
-    left: 10px;
-    top: 25%;
+    left: 15px;
+    top: 20%;
     transform: translateY(-50%);
     color: black;
     cursor: pointer;
@@ -283,15 +327,11 @@ input::placeholder {
     display: none;
   }
 
-
   /*Header*/
   .contents {
     display: none;
   }
 }
-
-
-
 
 /* ipad*/
 @media (min-width: 800px) and (max-width: 1108px) {
@@ -318,13 +358,48 @@ input::placeholder {
 /*Laptop View*/
 @media (min-width: 1109px) and (max-width: 1600px) {
   body {
-    background-color: black;
+    background-color: white;
     width: 100%;
   }
 
   /*Head*/
   .view {
     display: none;
+  }
+
+  .views .bi-chevron-down {
+    font-size: 12px;
+  }
+
+  .views .bi-chevron-down:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .lang1.show {
+    display: block;
+  }
+
+  
+  .lang1 {
+ color: white;
+    display: none;
+    position: absolute;
+    background-color: gray;
+    height: 35vh;
+    margin: 5px;
+    width: 150px;
+    border-radius: 5px;
+  }
+
+
+  .lan2,input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1px;
+    margin: 10px;
+    cursor: pointer;
   }
 
   .head-text1 {
