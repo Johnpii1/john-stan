@@ -23,17 +23,22 @@ btn.addEventListener("click", () => {
 });
 
 //Arrow
-const arrow = document.getElementById("arrow");
+// const arrow = document.getElementById("arrow");
 
-arrow.addEventListener("click", () => {
-  arrow.classList.toggle("rotate");
-});
+// arrow.addEventListener("click", () => {
+//   arrow.classList.toggle("rotate");
+// });
 
 
 //Mobile Categories
 const btn2 = document.getElementById("btn2");
 const catigories1 = document.getElementById("menu1");
+const closes = document.getElementById("close")
 
 btn2.addEventListener("click", () => {
     catigories1.classList.toggle("show");
+});
+
+closes.addEventListener("click", () => {
+  catigories1.classList.toggle.add("hidden")
 });
